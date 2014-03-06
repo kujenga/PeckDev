@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "86E155A918C7867900A97423"
-               BuildableName = "Peck App.app"
-               BlueprintName = "Peck App"
-               ReferencedContainer = "container:Peck App.xcodeproj">
+               BuildableName = "PeckDev.app"
+               BlueprintName = "PeckDev"
+               ReferencedContainer = "container:PeckDev.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "86E155C918C7867900A97423"
-               BuildableName = "Peck AppTests.xctest"
-               BlueprintName = "Peck AppTests"
-               ReferencedContainer = "container:Peck App.xcodeproj">
+               BuildableName = "PeckDevTests.xctest"
+               BlueprintName = "PeckDevTests"
+               ReferencedContainer = "container:PeckDev.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "86E155A918C7867900A97423"
-            BuildableName = "Peck App.app"
-            BlueprintName = "Peck App"
-            ReferencedContainer = "container:Peck App.xcodeproj">
+            BuildableName = "PeckDev.app"
+            BlueprintName = "PeckDev"
+            ReferencedContainer = "container:PeckDev.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "86E155A918C7867900A97423"
-            BuildableName = "Peck App.app"
-            BlueprintName = "Peck App"
-            ReferencedContainer = "container:Peck App.xcodeproj">
+            BuildableName = "PeckDev.app"
+            BlueprintName = "PeckDev"
+            ReferencedContainer = "container:PeckDev.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "86E155A918C7867900A97423"
-            BuildableName = "Peck App.app"
-            BlueprintName = "Peck App"
-            ReferencedContainer = "container:Peck App.xcodeproj">
+            BuildableName = "PeckDev.app"
+            BlueprintName = "PeckDev"
+            ReferencedContainer = "container:PeckDev.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

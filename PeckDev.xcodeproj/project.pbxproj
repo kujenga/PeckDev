@@ -14,14 +14,20 @@
 		86E155BA18C7867900A97423 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86E155B818C7867900A97423 /* InfoPlist.strings */; };
 		86E155BC18C7867900A97423 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E155BB18C7867900A97423 /* main.m */; };
 		86E155C018C7867900A97423 /* PeckAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E155BF18C7867900A97423 /* PeckAppDelegate.m */; };
-		86E155C318C7867900A97423 /* Peck_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86E155C118C7867900A97423 /* Peck_App.xcdatamodeld */; };
+		86E155C318C7867900A97423 /* PeckApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86E155C118C7867900A97423 /* PeckApp.xcdatamodeld */; };
 		86E155C518C7867900A97423 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86E155C418C7867900A97423 /* Images.xcassets */; };
 		86E155CC18C7867900A97423 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E155CB18C7867900A97423 /* XCTest.framework */; };
 		86E155CD18C7867900A97423 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E155AD18C7867900A97423 /* Foundation.framework */; };
 		86E155CE18C7867900A97423 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E155B118C7867900A97423 /* UIKit.framework */; };
 		86E155CF18C7867900A97423 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E155B318C7867900A97423 /* CoreData.framework */; };
 		86E155D718C7867900A97423 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86E155D518C7867900A97423 /* InfoPlist.strings */; };
-		86E155D918C7867900A97423 /* Peck_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E155D818C7867900A97423 /* Peck_AppTests.m */; };
+		86E155D918C7867900A97423 /* PeckAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E155D818C7867900A97423 /* PeckAppTests.m */; };
+		86E155E318C786A400A97423 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86E155E218C786A400A97423 /* MainStoryboard.storyboard */; };
+		86E155E718C786C300A97423 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E155E618C786C300A97423 /* SWRevealViewController.m */; };
+		86E155EA18C786DE00A97423 /* PeckSidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E155E918C786DE00A97423 /* PeckSidebarViewController.m */; };
+		86E155ED18C787C300A97423 /* PeckEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E155EC18C787C300A97423 /* PeckEventsViewController.m */; };
+		86E155F018C7B23C00A97423 /* PeckEventInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E155EF18C7B23C00A97423 /* PeckEventInfoViewController.m */; };
+		86E155F218C7F0E000A97423 /* MainStoryboard-ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86E155F118C7F0E000A97423 /* MainStoryboard-ipad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,24 +41,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		86E155AA18C7867900A97423 /* Peck App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Peck App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86E155AA18C7867900A97423 /* PeckDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeckDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86E155AD18C7867900A97423 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		86E155AF18C7867900A97423 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		86E155B118C7867900A97423 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		86E155B318C7867900A97423 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		86E155B718C7867900A97423 /* Peck App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Peck App-Info.plist"; sourceTree = "<group>"; };
+		86E155B718C7867900A97423 /* PeckDev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PeckDev-Info.plist"; sourceTree = "<group>"; };
 		86E155B918C7867900A97423 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		86E155BB18C7867900A97423 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		86E155BD18C7867900A97423 /* Peck App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Peck App-Prefix.pch"; sourceTree = "<group>"; };
+		86E155BD18C7867900A97423 /* PeckDev-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PeckDev-Prefix.pch"; sourceTree = "<group>"; };
 		86E155BE18C7867900A97423 /* PeckAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeckAppDelegate.h; sourceTree = "<group>"; };
 		86E155BF18C7867900A97423 /* PeckAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeckAppDelegate.m; sourceTree = "<group>"; };
-		86E155C218C7867900A97423 /* Peck_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Peck_App.xcdatamodel; sourceTree = "<group>"; };
+		86E155C218C7867900A97423 /* PeckApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PeckApp.xcdatamodel; sourceTree = "<group>"; };
 		86E155C418C7867900A97423 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		86E155CA18C7867900A97423 /* Peck AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Peck AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86E155CA18C7867900A97423 /* PeckDevTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeckDevTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86E155CB18C7867900A97423 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		86E155D418C7867900A97423 /* Peck AppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Peck AppTests-Info.plist"; sourceTree = "<group>"; };
+		86E155D418C7867900A97423 /* PeckDevTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PeckDevTests-Info.plist"; sourceTree = "<group>"; };
 		86E155D618C7867900A97423 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		86E155D818C7867900A97423 /* Peck_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Peck_AppTests.m; sourceTree = "<group>"; };
+		86E155D818C7867900A97423 /* PeckAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeckAppTests.m; sourceTree = "<group>"; };
+		86E155E218C786A400A97423 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		86E155E518C786C300A97423 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		86E155E618C786C300A97423 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		86E155E818C786DE00A97423 /* PeckSidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckSidebarViewController.h; sourceTree = "<group>"; };
+		86E155E918C786DE00A97423 /* PeckSidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckSidebarViewController.m; sourceTree = "<group>"; };
+		86E155EB18C787C300A97423 /* PeckEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckEventsViewController.h; sourceTree = "<group>"; };
+		86E155EC18C787C300A97423 /* PeckEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckEventsViewController.m; sourceTree = "<group>"; };
+		86E155EE18C7B23C00A97423 /* PeckEventInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckEventInfoViewController.h; sourceTree = "<group>"; };
+		86E155EF18C7B23C00A97423 /* PeckEventInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckEventInfoViewController.m; sourceTree = "<group>"; };
+		86E155F118C7F0E000A97423 /* MainStoryboard-ipad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "MainStoryboard-ipad.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +100,8 @@
 		86E155A118C7867900A97423 = {
 			isa = PBXGroup;
 			children = (
-				86E155B518C7867900A97423 /* Peck App */,
-				86E155D218C7867900A97423 /* Peck AppTests */,
+				86E155B518C7867900A97423 /* PeckDev */,
+				86E155D218C7867900A97423 /* PeckDevTests */,
 				86E155AC18C7867900A97423 /* Frameworks */,
 				86E155AB18C7867900A97423 /* Products */,
 			);
@@ -94,8 +110,8 @@
 		86E155AB18C7867900A97423 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				86E155AA18C7867900A97423 /* Peck App.app */,
-				86E155CA18C7867900A97423 /* Peck AppTests.xctest */,
+				86E155AA18C7867900A97423 /* PeckDev.app */,
+				86E155CA18C7867900A97423 /* PeckDevTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,53 +128,73 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		86E155B518C7867900A97423 /* Peck App */ = {
+		86E155B518C7867900A97423 /* PeckDev */ = {
 			isa = PBXGroup;
 			children = (
 				86E155BE18C7867900A97423 /* PeckAppDelegate.h */,
 				86E155BF18C7867900A97423 /* PeckAppDelegate.m */,
+				86E155E218C786A400A97423 /* MainStoryboard.storyboard */,
+				86E155F118C7F0E000A97423 /* MainStoryboard-ipad.storyboard */,
+				86E155E818C786DE00A97423 /* PeckSidebarViewController.h */,
+				86E155E918C786DE00A97423 /* PeckSidebarViewController.m */,
+				86E155EB18C787C300A97423 /* PeckEventsViewController.h */,
+				86E155EC18C787C300A97423 /* PeckEventsViewController.m */,
+				86E155EE18C7B23C00A97423 /* PeckEventInfoViewController.h */,
+				86E155EF18C7B23C00A97423 /* PeckEventInfoViewController.m */,
+				86E155E418C786C300A97423 /* SWRevealViewController */,
 				86E155C418C7867900A97423 /* Images.xcassets */,
-				86E155C118C7867900A97423 /* Peck_App.xcdatamodeld */,
+				86E155C118C7867900A97423 /* PeckApp.xcdatamodeld */,
 				86E155B618C7867900A97423 /* Supporting Files */,
 			);
+			name = PeckDev;
 			path = "Peck App";
 			sourceTree = "<group>";
 		};
 		86E155B618C7867900A97423 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				86E155B718C7867900A97423 /* Peck App-Info.plist */,
+				86E155B718C7867900A97423 /* PeckDev-Info.plist */,
 				86E155B818C7867900A97423 /* InfoPlist.strings */,
 				86E155BB18C7867900A97423 /* main.m */,
-				86E155BD18C7867900A97423 /* Peck App-Prefix.pch */,
+				86E155BD18C7867900A97423 /* PeckDev-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		86E155D218C7867900A97423 /* Peck AppTests */ = {
+		86E155D218C7867900A97423 /* PeckDevTests */ = {
 			isa = PBXGroup;
 			children = (
-				86E155D818C7867900A97423 /* Peck_AppTests.m */,
+				86E155D818C7867900A97423 /* PeckAppTests.m */,
 				86E155D318C7867900A97423 /* Supporting Files */,
 			);
+			name = PeckDevTests;
 			path = "Peck AppTests";
 			sourceTree = "<group>";
 		};
 		86E155D318C7867900A97423 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				86E155D418C7867900A97423 /* Peck AppTests-Info.plist */,
+				86E155D418C7867900A97423 /* PeckDevTests-Info.plist */,
 				86E155D518C7867900A97423 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		86E155E418C786C300A97423 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				86E155E518C786C300A97423 /* SWRevealViewController.h */,
+				86E155E618C786C300A97423 /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		86E155A918C7867900A97423 /* Peck App */ = {
+		86E155A918C7867900A97423 /* PeckDev */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86E155DC18C7867900A97423 /* Build configuration list for PBXNativeTarget "Peck App" */;
+			buildConfigurationList = 86E155DC18C7867900A97423 /* Build configuration list for PBXNativeTarget "PeckDev" */;
 			buildPhases = (
 				86E155A618C7867900A97423 /* Sources */,
 				86E155A718C7867900A97423 /* Frameworks */,
@@ -168,14 +204,14 @@
 			);
 			dependencies = (
 			);
-			name = "Peck App";
+			name = PeckDev;
 			productName = "Peck App";
-			productReference = 86E155AA18C7867900A97423 /* Peck App.app */;
+			productReference = 86E155AA18C7867900A97423 /* PeckDev.app */;
 			productType = "com.apple.product-type.application";
 		};
-		86E155C918C7867900A97423 /* Peck AppTests */ = {
+		86E155C918C7867900A97423 /* PeckDevTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86E155DF18C7867900A97423 /* Build configuration list for PBXNativeTarget "Peck AppTests" */;
+			buildConfigurationList = 86E155DF18C7867900A97423 /* Build configuration list for PBXNativeTarget "PeckDevTests" */;
 			buildPhases = (
 				86E155C618C7867900A97423 /* Sources */,
 				86E155C718C7867900A97423 /* Frameworks */,
@@ -186,9 +222,9 @@
 			dependencies = (
 				86E155D118C7867900A97423 /* PBXTargetDependency */,
 			);
-			name = "Peck AppTests";
+			name = PeckDevTests;
 			productName = "Peck AppTests";
-			productReference = 86E155CA18C7867900A97423 /* Peck AppTests.xctest */;
+			productReference = 86E155CA18C7867900A97423 /* PeckDevTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +242,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 86E155A518C7867900A97423 /* Build configuration list for PBXProject "Peck App" */;
+			buildConfigurationList = 86E155A518C7867900A97423 /* Build configuration list for PBXProject "PeckDev" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -218,8 +254,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				86E155A918C7867900A97423 /* Peck App */,
-				86E155C918C7867900A97423 /* Peck AppTests */,
+				86E155A918C7867900A97423 /* PeckDev */,
+				86E155C918C7867900A97423 /* PeckDevTests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,7 +265,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E155E318C786A400A97423 /* MainStoryboard.storyboard in Resources */,
 				86E155BA18C7867900A97423 /* InfoPlist.strings in Resources */,
+				86E155F218C7F0E000A97423 /* MainStoryboard-ipad.storyboard in Resources */,
 				86E155C518C7867900A97423 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,9 +287,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86E155C318C7867900A97423 /* Peck_App.xcdatamodeld in Sources */,
+				86E155F018C7B23C00A97423 /* PeckEventInfoViewController.m in Sources */,
+				86E155C318C7867900A97423 /* PeckApp.xcdatamodeld in Sources */,
 				86E155BC18C7867900A97423 /* main.m in Sources */,
+				86E155ED18C787C300A97423 /* PeckEventsViewController.m in Sources */,
 				86E155C018C7867900A97423 /* PeckAppDelegate.m in Sources */,
+				86E155EA18C786DE00A97423 /* PeckSidebarViewController.m in Sources */,
+				86E155E718C786C300A97423 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86E155D918C7867900A97423 /* Peck_AppTests.m in Sources */,
+				86E155D918C7867900A97423 /* PeckAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +310,7 @@
 /* Begin PBXTargetDependency section */
 		86E155D118C7867900A97423 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 86E155A918C7867900A97423 /* Peck App */;
+			target = 86E155A918C7867900A97423 /* PeckDev */;
 			targetProxy = 86E155D018C7867900A97423 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -373,9 +415,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Peck App/Peck App-Prefix.pch";
-				INFOPLIST_FILE = "Peck App/Peck App-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Peck App/PeckDev-Prefix.pch";
+				INFOPLIST_FILE = "Peck App/PeckDev-Info.plist";
+				PRODUCT_NAME = PeckDev;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -386,9 +428,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Peck App/Peck App-Prefix.pch";
-				INFOPLIST_FILE = "Peck App/Peck App-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Peck App/PeckDev-Prefix.pch";
+				INFOPLIST_FILE = "Peck App/PeckDev-Info.plist";
+				PRODUCT_NAME = PeckDev;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -409,8 +451,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Peck AppTests/Peck AppTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Peck AppTests/PeckDevTests-Info.plist";
+				PRODUCT_NAME = PeckDevTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -428,8 +470,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Peck App/Peck App-Prefix.pch";
-				INFOPLIST_FILE = "Peck AppTests/Peck AppTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Peck AppTests/PeckDevTests-Info.plist";
+				PRODUCT_NAME = PeckDevTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -438,7 +480,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		86E155A518C7867900A97423 /* Build configuration list for PBXProject "Peck App" */ = {
+		86E155A518C7867900A97423 /* Build configuration list for PBXProject "PeckDev" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				86E155DA18C7867900A97423 /* Debug */,
@@ -447,32 +489,34 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86E155DC18C7867900A97423 /* Build configuration list for PBXNativeTarget "Peck App" */ = {
+		86E155DC18C7867900A97423 /* Build configuration list for PBXNativeTarget "PeckDev" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				86E155DD18C7867900A97423 /* Debug */,
 				86E155DE18C7867900A97423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		86E155DF18C7867900A97423 /* Build configuration list for PBXNativeTarget "Peck AppTests" */ = {
+		86E155DF18C7867900A97423 /* Build configuration list for PBXNativeTarget "PeckDevTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				86E155E018C7867900A97423 /* Debug */,
 				86E155E118C7867900A97423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		86E155C118C7867900A97423 /* Peck_App.xcdatamodeld */ = {
+		86E155C118C7867900A97423 /* PeckApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				86E155C218C7867900A97423 /* Peck_App.xcdatamodel */,
+				86E155C218C7867900A97423 /* PeckApp.xcdatamodel */,
 			);
-			currentVersion = 86E155C218C7867900A97423 /* Peck_App.xcdatamodel */;
-			path = Peck_App.xcdatamodeld;
+			currentVersion = 86E155C218C7867900A97423 /* PeckApp.xcdatamodel */;
+			path = PeckApp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
