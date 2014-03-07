@@ -16,10 +16,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    //self.window.backgroundColor = [UIColor whiteColor];
-    //[self.window makeKeyAndVisible];
+    
+    NSString *identifier;
+    BOOL isSaved = [[NSUserDefaults standardUserDefaults] boolForKey:@"loginSaved"];
+    if (isSaved)
+    {
+        identifier=@"home";
+    }
+    else
+    {
+        identifier=@"login";
+    }
+    UIStoryboard * storyboardobj=[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    UIViewController * screen = [storyboardobj instantiateViewControllerWithIdentifier:identifier];
+    [self.window setRootViewController:screen];
     return YES;
 }
 

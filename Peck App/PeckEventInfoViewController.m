@@ -7,6 +7,7 @@
 //
 
 #import "PeckEventInfoViewController.h"
+#import "SWRevealViewController.h"
 
 @interface PeckEventInfoViewController ()
 
@@ -27,12 +28,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) passInfo:(NSString *)title
+{
+    self.navBar.title = title;
 }
 
 @end

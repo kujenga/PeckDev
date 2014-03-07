@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PeckEventInfoViewController : UIViewController
+@interface PeckEventInfoViewController : UIViewController {
+    
+}
+
+
+@property IBOutlet UINavigationItem * navBar;
+@property IBOutlet UILabel * eventTitle;
+
+-(void) passInfo:(NSString*) title;
 
 @end

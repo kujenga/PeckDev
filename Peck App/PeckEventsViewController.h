@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PeckEventsViewController : UITableViewController
+@interface PeckEventsViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem * sidebarButton;
+
+-(IBAction)logoutClicked:(id)sender;
+
 
 @end

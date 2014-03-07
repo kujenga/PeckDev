@@ -7,14 +7,17 @@
 //
 
 #import "PeckEventsViewController.h"
+#import "PeckLoginViewController.h"
+#import "PeckEventInfoViewController.h"
+
 #import "SWRevealViewController.h"
 
 @interface PeckEventsViewController () {
 
-NSArray * events;
-
+    NSArray * events;
 }
 
+@property (weak,nonatomic) PeckEventInfoViewController * destViewController;
 
 @end
 
@@ -58,13 +61,22 @@ NSArray * events;
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)logoutClicked:(id)sender
+{
+    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"loginSaved"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    //PeckLoginViewController * loginController = [[PeckLoginViewController alloc] init];
+    //[self.navigationController pushViewController:loginController animated:YES];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
 //#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -87,46 +99,22 @@ NSArray * events;
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+-(NSString*) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+    if (section == 0) {
+        return @"Today's Events";
+    } else {
+        return @"Tomorrow's Events";
+    }
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+#pragma mark - Table view delegate
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    [self.destViewController passInfo:events[indexPath.row]];
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
@@ -134,8 +122,14 @@ NSArray * events;
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    UIViewController * dest = [segue destinationViewController];
+    
+    if ([dest isKindOfClass:[PeckEventInfoViewController class]]) {
+        self.destViewController = (PeckEventInfoViewController*) dest;
+    }
 }
 
- */
+
 
 @end
