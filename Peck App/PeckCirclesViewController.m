@@ -33,6 +33,8 @@
     self.circlesTableView.delegate = self;
     
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+    self.navigationItem.title = @"Circles";
 }
 
 - (void)didReceiveMemoryWarning

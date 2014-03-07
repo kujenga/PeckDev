@@ -11,6 +11,7 @@
 @interface PeckEventsViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem * sidebarButton;
+@property (weak, nonatomic) NSString *titleText;
 
 -(IBAction)logoutClicked:(id)sender;
 

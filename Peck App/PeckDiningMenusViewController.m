@@ -29,6 +29,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+    self.navigationItem.title = @"Dining";
 }
 
 - (void)didReceiveMemoryWarning

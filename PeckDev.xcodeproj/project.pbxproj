@@ -71,8 +71,6 @@
 		8687DCB818C82EB200DE97CB /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 8687DC7218C82EB200DE97CB /* 5.png */; };
 		8687DCB918C82EB200DE97CB /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 8687DC7318C82EB200DE97CB /* 6.png */; };
 		8687DCBA18C82EB200DE97CB /* bg_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 8687DC7418C82EB200DE97CB /* bg_img.png */; };
-		8687DCBB18C82EB200DE97CB /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 8687DC7518C82EB200DE97CB /* folder.png */; };
-		8687DCBC18C82EB200DE97CB /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 8687DC7618C82EB200DE97CB /* home.png */; };
 		8687DCBD18C82EB200DE97CB /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 8687DC7718C82EB200DE97CB /* setting.png */; };
 		8687DCBE18C82EB200DE97CB /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 8687DC7818C82EB200DE97CB /* share.png */; };
 		8687DCBF18C82EB200DE97CB /* ShareButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8687DC7918C82EB200DE97CB /* ShareButton.png */; };
@@ -594,7 +592,6 @@
 				8687DC9418C82EB200DE97CB /* circles1.png in Resources */,
 				8687DC8718C82EB200DE97CB /* after_hours.png in Resources */,
 				8687DC9B18C82EB200DE97CB /* facebook.png in Resources */,
-				8687DCBB18C82EB200DE97CB /* folder.png in Resources */,
 				8687DC9F18C82EB200DE97CB /* friends.png in Resources */,
 				8687DCA518C82EB200DE97CB /* Logo.png in Resources */,
 				86E155F218C7F0E000A97423 /* MainStoryboard-ipad.storyboard in Resources */,
@@ -631,7 +628,6 @@
 				8687DCA218C82EB200DE97CB /* homenew.png in Resources */,
 				8687DC9018C82EB200DE97CB /* CancelButton.png in Resources */,
 				8687DCB118C82EB200DE97CB /* rightArrow.png in Resources */,
-				8687DCBC18C82EB200DE97CB /* home.png in Resources */,
 				8687DC9818C82EB200DE97CB /* Dinner.png in Resources */,
 				8687DCC218C82EB200DE97CB /* timenew.png in Resources */,
 				8687DC8F18C82EB200DE97CB /* campus_evnt.png in Resources */,

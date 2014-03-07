@@ -19,6 +19,7 @@
 
 @property (weak,nonatomic) PeckEventInfoViewController * destViewController;
 
+
 @end
 
 @implementation PeckEventsViewController
@@ -45,14 +46,20 @@
     _sidebarButton.target = self.revealViewController;
     _sidebarButton.action = @selector(revealToggle:);
     
-    // Set the gesture
-    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-
+    self.navigationItem.title = self.titleText;
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    // Set the gesture
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+
 }
 
 - (void)didReceiveMemoryWarning

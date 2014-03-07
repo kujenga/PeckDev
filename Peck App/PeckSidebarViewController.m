@@ -8,7 +8,11 @@
 
 #import "PeckSidebarViewController.h"
 #import "PeckEventsViewController.h"
+#import "PeckNotificationsViewController.h"
+#import "PeckDiningMenusViewController.h"
+#import "PeckCirclesViewController.h"
 #import "PeckFeedbackViewController.h"
+#import "PeckSettingsViewController.h"
 
 #import "SWRevealViewController.h"
 
@@ -121,11 +125,27 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
-    if ([segue.destinationViewController isKindOfClass:[PeckFeedbackViewController class]] &&
-        [sender isKindOfClass:[UITableViewCell class]]) {
-        
+    if ([sender isKindOfClass:[UITableViewCell class]]) {
+        if ([segue.destinationViewController isKindOfClass:[PeckEventsViewController class]]) {
+            if ([sender isKindOfClass:[UITableViewCell class]]) {
+                UITableViewCell * clickedCell = (UITableViewCell*)sender;
+                PeckEventsViewController * eventsController = (PeckEventsViewController*)segue.destinationViewController;
+                eventsController.titleText = clickedCell.reuseIdentifier;
+            }
+        } else if ([segue.destinationViewController isKindOfClass:[PeckNotificationsViewController class]]) {
+            
+        } else if ([segue.destinationViewController isKindOfClass:[PeckDiningMenusViewController class]]) {
+            
+        } else if ([segue.destinationViewController isKindOfClass:[PeckCirclesViewController class]]) {
+            
+        } else if ([segue.destinationViewController isKindOfClass:[PeckFeedbackViewController class]]) {
+            
+        } else if ([segue.destinationViewController isKindOfClass:[PeckSettingsViewController class]]) {
+            
+        } else {
+            
+        }
     }
-    
     
     if ( [segue isKindOfClass: [SWRevealViewControllerSegue class]] )
     {
