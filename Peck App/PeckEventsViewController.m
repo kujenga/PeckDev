@@ -7,7 +7,7 @@
 //
 
 #import "PeckEventsViewController.h"
-#import "PeckLoginViewController.h"
+#import "PeckInitialViewController.h"
 #import "PeckEventInfoViewController.h"
 
 #import "SWRevealViewController.h"

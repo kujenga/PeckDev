@@ -17,20 +17,27 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
-    NSString *identifier;
-    BOOL isSaved = [[NSUserDefaults standardUserDefaults] boolForKey:@"loginSaved"];
-    if (isSaved)
+    // set Page pontrol aappearance
+    UIPageControl *pageControl = [UIPageControl appearance];
+    pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+    pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+    pageControl.backgroundColor = [UIColor whiteColor];
+    // Initialize proper storyboard
+    UIStoryboard * storyboardobj;
+    UIViewController * screen;
+    BOOL isLoggedIn = [[NSUserDefaults standardUserDefaults] boolForKey:@"loginSaved"];
+    if (isLoggedIn)
     {
-        identifier=@"home";
+        storyboardobj=[UIStoryboard storyboardWithName:@"LoginStoryboard" bundle:nil];
+        screen = [storyboardobj instantiateInitialViewController];
     }
     else
     {
-        identifier=@"login";
+        storyboardobj=[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+        screen = [storyboardobj instantiateInitialViewController];
     }
-    UIStoryboard * storyboardobj=[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-    UIViewController * screen = [storyboardobj instantiateViewControllerWithIdentifier:identifier];
     [self.window setRootViewController:screen];
+    
     return YES;
 }
 

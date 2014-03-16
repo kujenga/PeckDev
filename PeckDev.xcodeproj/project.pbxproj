@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8610864018D0994B0059AA7F /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8610863F18D0994B0059AA7F /* LoginStoryboard.storyboard */; };
+		8610864718D0A73B0059AA7F /* stones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8610864618D0A73B0059AA7F /* stones.jpg */; };
+		8610864918D0A7550059AA7F /* clouds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8610864818D0A7550059AA7F /* clouds.jpg */; };
+		8610864C18D0AB520059AA7F /* PeckTutorialContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8610864B18D0AB520059AA7F /* PeckTutorialContentViewController.m */; };
 		86146C3418C9737500C06873 /* PeckNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86146C3318C9737500C06873 /* PeckNotificationsViewController.m */; };
 		86146C3718C973C900C06873 /* PeckCirclesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86146C3618C973C900C06873 /* PeckCirclesViewController.m */; };
-		8632F3AB18C956CF005ACAA6 /* PeckLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8632F3AA18C956CF005ACAA6 /* PeckLoginViewController.m */; };
+		8631B48D18D0AE7200A21E81 /* PeckTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8631B48C18D0AE7200A21E81 /* PeckTutorialViewController.m */; };
+		8631B49018D13C7300A21E81 /* PeckLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8631B48F18D13C7300A21E81 /* PeckLoadingViewController.m */; };
+		8631D9E018D554F300F86E20 /* PeckLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8631D9DF18D554F300F86E20 /* PeckLoginViewController.m */; };
+		8631D9E318D5550900F86E20 /* PeckRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8631D9E218D5550900F86E20 /* PeckRegisterViewController.m */; };
+		8632F3AB18C956CF005ACAA6 /* PeckInitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8632F3AA18C956CF005ACAA6 /* PeckInitialViewController.m */; };
 		8632F3AD18C95B32005ACAA6 /* tree.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8632F3AC18C95B32005ACAA6 /* tree.jpg */; };
 		8632F3B218C9686F005ACAA6 /* sidebar_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8632F3B118C9686F005ACAA6 /* sidebar_background.jpg */; };
 		8687DC8018C82EB200DE97CB /* 114_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 8687DC3918C82EB200DE97CB /* 114_114.png */; };
@@ -121,12 +129,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8610863F18D0994B0059AA7F /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		8610864618D0A73B0059AA7F /* stones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stones.jpg; path = ../stones.jpg; sourceTree = "<group>"; };
+		8610864818D0A7550059AA7F /* clouds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = clouds.jpg; path = ../clouds.jpg; sourceTree = "<group>"; };
+		8610864A18D0AB520059AA7F /* PeckTutorialContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckTutorialContentViewController.h; sourceTree = "<group>"; };
+		8610864B18D0AB520059AA7F /* PeckTutorialContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckTutorialContentViewController.m; sourceTree = "<group>"; };
 		86146C3218C9737500C06873 /* PeckNotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckNotificationsViewController.h; sourceTree = "<group>"; };
 		86146C3318C9737500C06873 /* PeckNotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckNotificationsViewController.m; sourceTree = "<group>"; };
 		86146C3518C973C900C06873 /* PeckCirclesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckCirclesViewController.h; sourceTree = "<group>"; };
 		86146C3618C973C900C06873 /* PeckCirclesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckCirclesViewController.m; sourceTree = "<group>"; };
-		8632F3A918C956CF005ACAA6 /* PeckLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckLoginViewController.h; sourceTree = "<group>"; };
-		8632F3AA18C956CF005ACAA6 /* PeckLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckLoginViewController.m; sourceTree = "<group>"; };
+		8631B48B18D0AE7200A21E81 /* PeckTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckTutorialViewController.h; sourceTree = "<group>"; };
+		8631B48C18D0AE7200A21E81 /* PeckTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckTutorialViewController.m; sourceTree = "<group>"; };
+		8631B48E18D13C7300A21E81 /* PeckLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckLoadingViewController.h; sourceTree = "<group>"; };
+		8631B48F18D13C7300A21E81 /* PeckLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckLoadingViewController.m; sourceTree = "<group>"; };
+		8631D9DE18D554F300F86E20 /* PeckLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckLoginViewController.h; sourceTree = "<group>"; };
+		8631D9DF18D554F300F86E20 /* PeckLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckLoginViewController.m; sourceTree = "<group>"; };
+		8631D9E118D5550900F86E20 /* PeckRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckRegisterViewController.h; sourceTree = "<group>"; };
+		8631D9E218D5550900F86E20 /* PeckRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckRegisterViewController.m; sourceTree = "<group>"; };
+		8632F3A918C956CF005ACAA6 /* PeckInitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckInitialViewController.h; sourceTree = "<group>"; };
+		8632F3AA18C956CF005ACAA6 /* PeckInitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckInitialViewController.m; sourceTree = "<group>"; };
 		8632F3AC18C95B32005ACAA6 /* tree.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tree.jpg; sourceTree = "<group>"; };
 		8632F3B118C9686F005ACAA6 /* sidebar_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sidebar_background.jpg; sourceTree = "<group>"; };
 		8687DC3918C82EB200DE97CB /* 114_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114_114.png; sourceTree = "<group>"; };
@@ -265,11 +286,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8610864D18D0AB610059AA7F /* login */ = {
+			isa = PBXGroup;
+			children = (
+				8610863F18D0994B0059AA7F /* LoginStoryboard.storyboard */,
+				8632F3A918C956CF005ACAA6 /* PeckInitialViewController.h */,
+				8632F3AA18C956CF005ACAA6 /* PeckInitialViewController.m */,
+				8631D9DE18D554F300F86E20 /* PeckLoginViewController.h */,
+				8631D9DF18D554F300F86E20 /* PeckLoginViewController.m */,
+				8631D9E118D5550900F86E20 /* PeckRegisterViewController.h */,
+				8631D9E218D5550900F86E20 /* PeckRegisterViewController.m */,
+				8631B48E18D13C7300A21E81 /* PeckLoadingViewController.h */,
+				8631B48F18D13C7300A21E81 /* PeckLoadingViewController.m */,
+				8631B48B18D0AE7200A21E81 /* PeckTutorialViewController.h */,
+				8631B48C18D0AE7200A21E81 /* PeckTutorialViewController.m */,
+				8610864A18D0AB520059AA7F /* PeckTutorialContentViewController.h */,
+				8610864B18D0AB520059AA7F /* PeckTutorialContentViewController.m */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
 		8632F3AE18C95B3A005ACAA6 /* images */ = {
 			isa = PBXGroup;
 			children = (
 				8632F3B118C9686F005ACAA6 /* sidebar_background.jpg */,
 				8632F3AC18C95B32005ACAA6 /* tree.jpg */,
+				8610864618D0A73B0059AA7F /* stones.jpg */,
+				8610864818D0A7550059AA7F /* clouds.jpg */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -364,6 +407,8 @@
 			isa = PBXGroup;
 			children = (
 				86E155B518C7867900A97423 /* PeckDev */,
+				86E155E418C786C300A97423 /* SWRevealViewController */,
+				86E155F318C82B4E00A97423 /* Latofont */,
 				86E155D218C7867900A97423 /* PeckDevTests */,
 				86E155AC18C7867900A97423 /* Frameworks */,
 				86E155AB18C7867900A97423 /* Products */,
@@ -396,10 +441,9 @@
 			children = (
 				86E155BE18C7867900A97423 /* PeckAppDelegate.h */,
 				86E155BF18C7867900A97423 /* PeckAppDelegate.m */,
+				8610864D18D0AB610059AA7F /* login */,
 				86E155E218C786A400A97423 /* MainStoryboard.storyboard */,
 				86E155F118C7F0E000A97423 /* MainStoryboard-ipad.storyboard */,
-				8632F3A918C956CF005ACAA6 /* PeckLoginViewController.h */,
-				8632F3AA18C956CF005ACAA6 /* PeckLoginViewController.m */,
 				86E155E818C786DE00A97423 /* PeckSidebarViewController.h */,
 				86E155E918C786DE00A97423 /* PeckSidebarViewController.m */,
 				86E155EB18C787C300A97423 /* PeckEventsViewController.h */,
@@ -416,8 +460,6 @@
 				86ACA03A18C9744000051FC2 /* PeckFeedbackViewController.m */,
 				86ACA03C18C9744E00051FC2 /* PeckSettingsViewController.h */,
 				86ACA03D18C9744E00051FC2 /* PeckSettingsViewController.m */,
-				86E155E418C786C300A97423 /* SWRevealViewController */,
-				86E155F318C82B4E00A97423 /* Latofont */,
 				8687DC3818C82EB200DE97CB /* old images */,
 				8632F3AE18C95B3A005ACAA6 /* images */,
 				86E155C418C7867900A97423 /* Images.xcassets */,
@@ -464,7 +506,8 @@
 				86E155E518C786C300A97423 /* SWRevealViewController.h */,
 				86E155E618C786C300A97423 /* SWRevealViewController.m */,
 			);
-			path = SWRevealViewController;
+			name = SWRevealViewController;
+			path = "Peck App/SWRevealViewController";
 			sourceTree = "<group>";
 		};
 		86E155F318C82B4E00A97423 /* Latofont */ = {
@@ -475,7 +518,8 @@
 				86E155F618C82B4E00A97423 /* Lato-Lig.ttf */,
 				86E155F718C82B4E00A97423 /* Lato-Reg.ttf */,
 			);
-			path = Latofont;
+			name = Latofont;
+			path = "Peck App/Latofont";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -565,6 +609,7 @@
 				8687DCA018C82EB200DE97CB /* help.png in Resources */,
 				8687DCA618C82EB200DE97CB /* Logo1.png in Resources */,
 				8687DCB518C82EB200DE97CB /* 2.png in Resources */,
+				8610864018D0994B0059AA7F /* LoginStoryboard.storyboard in Resources */,
 				8687DCAB18C82EB200DE97CB /* my_horizon_listing.png in Resources */,
 				8687DC8A18C82EB200DE97CB /* backButton.png in Resources */,
 				8687DCB818C82EB200DE97CB /* 5.png in Resources */,
@@ -601,11 +646,13 @@
 				8687DCC418C82EB200DE97CB /* uncheck.png in Resources */,
 				8632F3B218C9686F005ACAA6 /* sidebar_background.jpg in Resources */,
 				8687DCC518C82EB200DE97CB /* w.png in Resources */,
+				8610864918D0A7550059AA7F /* clouds.jpg in Resources */,
 				8687DCA418C82EB200DE97CB /* location.png in Resources */,
 				86E155FB18C82B4E00A97423 /* Lato-Reg.ttf in Resources */,
 				86E155C518C7867900A97423 /* Images.xcassets in Resources */,
 				8687DC8C18C82EB200DE97CB /* breakfast.png in Resources */,
 				8687DCA818C82EB200DE97CB /* mail.png in Resources */,
+				8610864718D0A73B0059AA7F /* stones.jpg in Resources */,
 				8687DC8918C82EB200DE97CB /* athleticsnew.png in Resources */,
 				8687DC8418C82EB200DE97CB /* activity_listing.png in Resources */,
 				8687DC9518C82EB200DE97CB /* delete.png in Resources */,
@@ -651,18 +698,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				86146C3418C9737500C06873 /* PeckNotificationsViewController.m in Sources */,
+				8631D9E018D554F300F86E20 /* PeckLoginViewController.m in Sources */,
 				86E155F018C7B23C00A97423 /* PeckEventInfoViewController.m in Sources */,
 				86ACA03E18C9744F00051FC2 /* PeckSettingsViewController.m in Sources */,
 				86E155C318C7867900A97423 /* PeckApp.xcdatamodeld in Sources */,
 				86E155BC18C7867900A97423 /* main.m in Sources */,
 				86E155ED18C787C300A97423 /* PeckEventsViewController.m in Sources */,
+				8631B49018D13C7300A21E81 /* PeckLoadingViewController.m in Sources */,
 				86E155C018C7867900A97423 /* PeckAppDelegate.m in Sources */,
 				86BD1B8018C9727400105DE7 /* PeckDiningMenusViewController.m in Sources */,
 				86E155EA18C786DE00A97423 /* PeckSidebarViewController.m in Sources */,
 				86E155E718C786C300A97423 /* SWRevealViewController.m in Sources */,
+				8631D9E318D5550900F86E20 /* PeckRegisterViewController.m in Sources */,
 				86146C3718C973C900C06873 /* PeckCirclesViewController.m in Sources */,
 				86ACA03B18C9744000051FC2 /* PeckFeedbackViewController.m in Sources */,
-				8632F3AB18C956CF005ACAA6 /* PeckLoginViewController.m in Sources */,
+				8632F3AB18C956CF005ACAA6 /* PeckInitialViewController.m in Sources */,
+				8631B48D18D0AE7200A21E81 /* PeckTutorialViewController.m in Sources */,
+				8610864C18D0AB520059AA7F /* PeckTutorialContentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

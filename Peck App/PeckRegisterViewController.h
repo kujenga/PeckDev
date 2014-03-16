@@ -1,5 +1,5 @@
 //
-//  PeckLoginViewController.h
+//  PeckRegisterViewController.h
 //  PeckDev
 //
 //  Created by Aaron Taylor on 3/15/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PeckLoginViewController : UIViewController
+@interface PeckRegisterViewController : UIViewController
 
 @end

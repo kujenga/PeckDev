@@ -1,18 +1,20 @@
 //
-//  PeckLoginViewController.m
+//  PeckTutorialContentViewController.m
 //  PeckDev
 //
-//  Created by Aaron Taylor on 3/15/14.
+//  Created by Aaron Taylor on 3/12/14.
 //  Copyright (c) 2014 Peck App. All rights reserved.
 //
 
-#import "PeckLoginViewController.h"
+#import "PeckTutorialContentViewController.h"
 
-@interface PeckLoginViewController ()
+@interface PeckTutorialContentViewController ()
+
+
 
 @end
 
-@implementation PeckLoginViewController
+@implementation PeckTutorialContentViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +29,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    self.backgroundImageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:self.imageFile ofType:@"jpg"]];
+    self.titleLabel.text = self.titleText;
 }
 
 - (void)didReceiveMemoryWarning
