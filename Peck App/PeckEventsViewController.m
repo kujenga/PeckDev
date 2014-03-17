@@ -9,6 +9,7 @@
 #import "PeckEventsViewController.h"
 #import "PeckInitialViewController.h"
 #import "PeckEventInfoViewController.h"
+#import "PeckEventCell.h"
 
 #import "SWRevealViewController.h"
 
@@ -95,14 +96,18 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"EventCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *cellIdentifier = @"EventCell";
+    PeckEventCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        [tableView registerNib:[UINib nibWithNibName:@"PeckEventCell" bundle:nil] forCellReuseIdentifier:@"EventCell"];
+        cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     }
     // Configure the cell...
-    cell.textLabel.text = events[indexPath.row];
+    NSDictionary *attributes = [NSDictionary dictionaryWithObjects:@[@"Peck Hiring Event",@"Noon",@"Peck Global Headquarters"]
+                                                           forKeys:@[@"title",@"time",@"location"]];
+    [cell setAttributes:attributes];
     
+
     return cell;
 }
 

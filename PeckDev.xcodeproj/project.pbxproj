@@ -88,6 +88,8 @@
 		8687DCC318C82EB200DE97CB /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 8687DC7D18C82EB200DE97CB /* twitter.png */; };
 		8687DCC418C82EB200DE97CB /* uncheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 8687DC7E18C82EB200DE97CB /* uncheck.png */; };
 		8687DCC518C82EB200DE97CB /* w.png in Resources */ = {isa = PBXBuildFile; fileRef = 8687DC7F18C82EB200DE97CB /* w.png */; };
+		86907BEE18D5583400079FD5 /* PeckEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86907BED18D5583400079FD5 /* PeckEventCell.m */; };
+		86907BF718D771B000079FD5 /* PeckEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86907BF618D771B000079FD5 /* PeckEventCell.xib */; };
 		86ACA03B18C9744000051FC2 /* PeckFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86ACA03A18C9744000051FC2 /* PeckFeedbackViewController.m */; };
 		86ACA03E18C9744F00051FC2 /* PeckSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86ACA03D18C9744E00051FC2 /* PeckSettingsViewController.m */; };
 		86BD1B8018C9727400105DE7 /* PeckDiningMenusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BD1B7F18C9727400105DE7 /* PeckDiningMenusViewController.m */; };
@@ -220,6 +222,9 @@
 		8687DC7D18C82EB200DE97CB /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		8687DC7E18C82EB200DE97CB /* uncheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uncheck.png; sourceTree = "<group>"; };
 		8687DC7F18C82EB200DE97CB /* w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = w.png; sourceTree = "<group>"; };
+		86907BEC18D5583400079FD5 /* PeckEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckEventCell.h; sourceTree = "<group>"; };
+		86907BED18D5583400079FD5 /* PeckEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckEventCell.m; sourceTree = "<group>"; };
+		86907BF618D771B000079FD5 /* PeckEventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeckEventCell.xib; sourceTree = "<group>"; };
 		86ACA03918C9744000051FC2 /* PeckFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckFeedbackViewController.h; sourceTree = "<group>"; };
 		86ACA03A18C9744000051FC2 /* PeckFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckFeedbackViewController.m; sourceTree = "<group>"; };
 		86ACA03C18C9744E00051FC2 /* PeckSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckSettingsViewController.h; sourceTree = "<group>"; };
@@ -403,6 +408,16 @@
 			path = sequence;
 			sourceTree = "<group>";
 		};
+		86907BEB18D557F800079FD5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				86907BEC18D5583400079FD5 /* PeckEventCell.h */,
+				86907BED18D5583400079FD5 /* PeckEventCell.m */,
+				86907BF618D771B000079FD5 /* PeckEventCell.xib */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
 		86E155A118C7867900A97423 = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +465,7 @@
 				86E155EC18C787C300A97423 /* PeckEventsViewController.m */,
 				86E155EE18C7B23C00A97423 /* PeckEventInfoViewController.h */,
 				86E155EF18C7B23C00A97423 /* PeckEventInfoViewController.m */,
+				86907BEB18D557F800079FD5 /* Components */,
 				86146C3218C9737500C06873 /* PeckNotificationsViewController.h */,
 				86146C3318C9737500C06873 /* PeckNotificationsViewController.m */,
 				86BD1B7E18C9727400105DE7 /* PeckDiningMenusViewController.h */,
@@ -639,6 +655,7 @@
 				8687DC9B18C82EB200DE97CB /* facebook.png in Resources */,
 				8687DC9F18C82EB200DE97CB /* friends.png in Resources */,
 				8687DCA518C82EB200DE97CB /* Logo.png in Resources */,
+				86907BF718D771B000079FD5 /* PeckEventCell.xib in Resources */,
 				86E155F218C7F0E000A97423 /* MainStoryboard-ipad.storyboard in Resources */,
 				8687DC8318C82EB200DE97CB /* activity.png in Resources */,
 				8687DCBD18C82EB200DE97CB /* setting.png in Resources */,
@@ -697,6 +714,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86907BEE18D5583400079FD5 /* PeckEventCell.m in Sources */,
 				86146C3418C9737500C06873 /* PeckNotificationsViewController.m in Sources */,
 				8631D9E018D554F300F86E20 /* PeckLoginViewController.m in Sources */,
 				86E155F018C7B23C00A97423 /* PeckEventInfoViewController.m in Sources */,
