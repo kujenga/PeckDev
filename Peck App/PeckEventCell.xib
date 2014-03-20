@@ -14,7 +14,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUZ-Ek-tx4">
-                        <rect key="frame" x="87" y="12" width="172" height="21"/>
+                        <rect key="frame" x="87" y="7" width="172" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="highlightedColor"/>
@@ -26,15 +26,15 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axf-aJ-wY5">
-                        <rect key="frame" x="87" y="47" width="172" height="21"/>
+                        <rect key="frame" x="87" y="52" width="172" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5T-fV-vpv">
-                        <rect key="frame" x="267" y="25" width="44" height="30"/>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5T-fV-vpv">
+                        <rect key="frame" x="267" y="18" width="44" height="44"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" title="Check">
+                        <state key="normal" image="check1.png">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                     </button>
@@ -45,7 +45,7 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
-                <outlet property="checkButton" destination="Uox-Dh-grN" id="2dP-bn-9Gq"/>
+                <outlet property="checkButton" destination="f5T-fV-vpv" id="E1Z-eH-r4a"/>
                 <outlet property="eventLocation" destination="axf-aJ-wY5" id="64r-AH-67p"/>
                 <outlet property="eventTime" destination="31b-WB-M9v" id="pGb-1g-IZc"/>
                 <outlet property="eventTitle" destination="fUZ-Ek-tx4" id="Q6K-iz-yGU"/>
@@ -53,4 +53,7 @@
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="check1.png" width="68" height="68"/>
+    </resources>
 </document>

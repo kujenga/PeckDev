@@ -35,6 +35,11 @@
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
     self.navigationItem.title = @"Circles";
+    
+    [self.navigationItem setLeftBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"Menu"
+                                                                               style:UIBarButtonItemStylePlain
+                                                                              target:self.revealViewController
+                                                                              action:@selector(revealToggle:)]];
 }
 
 - (void)didReceiveMemoryWarning

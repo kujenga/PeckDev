@@ -8,6 +8,7 @@
 
 #import "PeckAppDelegate.h"
 
+
 @implementation PeckAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -16,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     // Override point for customization after application launch.
     // set Page pontrol aappearance
     UIPageControl *pageControl = [UIPageControl appearance];
@@ -26,6 +28,7 @@
     UIStoryboard * storyboardobj;
     UIViewController * screen;
     BOOL isLoggedIn = [[NSUserDefaults standardUserDefaults] boolForKey:@"loginSaved"];
+    
     if (false && isLoggedIn)
     {
         storyboardobj=[UIStoryboard storyboardWithName:@"LoginStoryboard" bundle:nil];

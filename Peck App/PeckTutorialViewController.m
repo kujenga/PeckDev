@@ -9,6 +9,8 @@
 #import "PeckTutorialViewController.h"
 #import "PeckTutorialContentViewController.h"
 
+#import "PeckAppDelegate.h"
+
 @interface PeckTutorialViewController ()
 
 @end
@@ -28,8 +30,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.pageTitles = @[@"A Tree", @"Stone Cairn", @"Clouds in the Sky"];
-    self.pageImages = @[@"tree", @"stones", @"clouds"];
+    self.pageTitles = @[@"A Tree", @"Stone Cairn", @"Clouds in the Sky",@"Drops on a Flower"];
+    self.pageImages = @[@"tree", @"stones", @"clouds",@"pink"];
     
     self.dataSource = self;
     
@@ -40,12 +42,30 @@
     
     // Change the size of page view controller
     self.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    
+    UIButton *begin = [[UIButton alloc] initWithFrame:CGRectMake(100.0, 300.0, 150.0, 50.0)];
+    [begin setTitle:@"Begin using Peck" forState:UIControlStateNormal];
+    [begin setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [begin setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
+    [begin addTarget:self action:@selector(beginUsingPeck) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:begin];
     }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) beginUsingPeck
+{
+    
+    UIStoryboard * storyboardobj=[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    UIViewController * view = [storyboardobj instantiateInitialViewController];
+    
+    PeckAppDelegate *appDel=(PeckAppDelegate *) [UIApplication sharedApplication].delegate;
+    
+    [appDel.window setRootViewController:view];
 }
 
 - (PeckTutorialContentViewController *)viewControllerAtIndex:(NSUInteger)index

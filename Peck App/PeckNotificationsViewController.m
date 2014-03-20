@@ -32,6 +32,10 @@
     
     self.navigationItem.title = @"Pecks";
 
+    [self.navigationItem setLeftBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"Menu"
+                                                                               style:UIBarButtonItemStylePlain
+                                                                              target:self.revealViewController
+                                                                              action:@selector(revealToggle:)]];
 }
 
 - (void)didReceiveMemoryWarning

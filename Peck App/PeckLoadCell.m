@@ -6,17 +6,15 @@
 //  Copyright (c) 2014 Peck App. All rights reserved.
 //
 
-#import "PeckEventCell.h"
+#import "PeckLoadCell.h"
 
-@interface PeckEventCell () {
+@interface PeckLoadCell () {
     
 }
 
 @end
 
-@implementation PeckEventCell
-
-@synthesize eventTitle,eventTime,eventLocation;
+@implementation PeckLoadCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -26,15 +24,9 @@
     return self;
 }
 
--(void) setAttributes:(NSDictionary *)attributes
+-(void) setMessage:(NSString *)message
 {
-    self.eventTitle.text = [attributes objectForKey:@"title"];
-    self.eventTime.text = [attributes objectForKey:@"time"];
-    self.eventLocation.text = [attributes objectForKey:@"location"];
-    NSString * imageName = [attributes objectForKey:@"image"];
-    if (imageName) {
-        [self.iconImage setImage:[UIImage imageNamed:imageName]];
-    }
+    self.loadMessage.text = message;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

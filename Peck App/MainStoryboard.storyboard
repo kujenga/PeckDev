@@ -37,6 +37,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="sidebarButton" destination="tSB-kB-SlL" id="8UK-Mt-2W2"/>
+                        <segue destination="gce-lY-MlJ" kind="push" identifier="PushEventInfo" id="RfN-LG-vAp"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GN2-2a-wdR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -73,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OXT-pO-fnu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2197" y="-373"/>
+            <point key="canvasLocation" x="2200" y="-367"/>
         </scene>
         <!--Peck Dining Menus View Controller-->
         <scene sceneID="1Hy-mm-Ueb">

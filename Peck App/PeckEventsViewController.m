@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Peck App. All rights reserved.
 //
 
+#import "PeckAppDelegate.h"
 #import "PeckEventsViewController.h"
 #import "PeckInitialViewController.h"
 #import "PeckEventInfoViewController.h"
@@ -15,7 +16,7 @@
 
 @interface PeckEventsViewController () {
 
-    NSArray * events;
+    NSMutableArray * events;
 }
 
 @property (weak,nonatomic) PeckEventInfoViewController * destViewController;
@@ -38,7 +39,7 @@
 {
     [super viewDidLoad];
     
-    events = @[@"Event 1",@"Event 2",@"Event 3",@"Event 4"];
+    events = [@[@"Event 1",@"Event 2",@"Event 3",@"Event 4"] mutableCopy];
     
     // Change button color
     //_sidebarButton.tintColor = [UIColor colorWithWhite:0.96f alpha:0.2f];
@@ -54,6 +55,16 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    UIRefreshControl * refresh = [[UIRefreshControl alloc] init];
+    refresh.attributedTitle = [[NSAttributedString alloc] initWithString:@"Pull for previous events"];
+    refresh.tintColor = [UIColor darkGrayColor];
+    [refresh addTarget:self action:@selector(updateEvents) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refresh;
+    
+    
+    
+    
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -69,6 +80,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void) updateEvents
+{
+    [events removeAllObjects];
+    for (int i = 1; i < 5; i++) {
+        [events addObject:[NSString stringWithFormat:@"Event %d",(rand()%1000)]];
+    }
+    [self.tableView reloadData];
+    
+    [self performSelector:@selector(stopRefresh) withObject:nil afterDelay:1.0];
+}
+
+- (void)stopRefresh
+
+{
+    [self.refreshControl endRefreshing];
+}
+
 -(IBAction)logoutClicked:(id)sender
 {
     [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"loginSaved"];
@@ -76,20 +104,25 @@
     
     //PeckLoginViewController * loginController = [[PeckLoginViewController alloc] init];
     //[self.navigationController pushViewController:loginController animated:YES];
+    
+    UIStoryboard * storyboardobj=[UIStoryboard storyboardWithName:@"LoginStoryboard" bundle:nil];
+    UIViewController * view = [storyboardobj instantiateInitialViewController];
+    
+    PeckAppDelegate *appDel=(PeckAppDelegate *) [UIApplication sharedApplication].delegate;
+    
+    [appDel.window setRootViewController:view];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-//#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-//#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return [events count];
 }
@@ -102,13 +135,20 @@
         [tableView registerNib:[UINib nibWithNibName:@"PeckEventCell" bundle:nil] forCellReuseIdentifier:@"EventCell"];
         cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     }
-    // Configure the cell...
-    NSDictionary *attributes = [NSDictionary dictionaryWithObjects:@[@"Peck Hiring Event",@"Noon",@"Peck Global Headquarters"]
-                                                           forKeys:@[@"title",@"time",@"location"]];
-    [cell setAttributes:attributes];
-    
-
     return cell;
+}
+
+- (void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Configure the cell...
+    NSDictionary *attributes = [NSDictionary dictionaryWithObjects:@[events[indexPath.row],@"1:30 pm",@"Peck HQ",@"w"]
+                                                           forKeys:@[@"title",@"time",@"location",@"image"]];
+    [(PeckEventCell*)cell setAttributes:attributes];
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 80.0;
 }
 
 -(NSString*) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -122,9 +162,17 @@
 
 #pragma mark - Table view delegate
 
+-(NSIndexPath*) tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
+    return indexPath;
+}
+
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [self performSegueWithIdentifier:@"PushEventInfo" sender:self];
     [self.destViewController passInfo:events[indexPath.row]];
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 #pragma mark - Navigation

@@ -14,7 +14,7 @@
 @property (weak,nonatomic) IBOutlet UILabel *eventTitle;
 @property (weak,nonatomic) IBOutlet UILabel *eventTime;
 @property (weak,nonatomic) IBOutlet UILabel *eventLocation;
-@property (weak, nonatomic) IBOutlet UIView *checkButton;
+@property (weak, nonatomic) IBOutlet UIButton *checkButton;
 
 -(void) setAttributes:(NSDictionary*) attributes;
 
