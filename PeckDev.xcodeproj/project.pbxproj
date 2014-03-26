@@ -123,6 +123,7 @@
 		86E155F918C82B4E00A97423 /* Lato-Hai.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86E155F518C82B4E00A97423 /* Lato-Hai.ttf */; };
 		86E155FA18C82B4E00A97423 /* Lato-Lig.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86E155F618C82B4E00A97423 /* Lato-Lig.ttf */; };
 		86E155FB18C82B4E00A97423 /* Lato-Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86E155F718C82B4E00A97423 /* Lato-Reg.ttf */; };
+		86F5C37518DFA69600ADE6E9 /* PeckLoginStoryboardLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F5C37418DFA69600ADE6E9 /* PeckLoginStoryboardLink.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -274,6 +275,8 @@
 		86E155F518C82B4E00A97423 /* Lato-Hai.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hai.ttf"; sourceTree = "<group>"; };
 		86E155F618C82B4E00A97423 /* Lato-Lig.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Lig.ttf"; sourceTree = "<group>"; };
 		86E155F718C82B4E00A97423 /* Lato-Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Reg.ttf"; sourceTree = "<group>"; };
+		86F5C37318DFA69600ADE6E9 /* PeckLoginStoryboardLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckLoginStoryboardLink.h; sourceTree = "<group>"; };
+		86F5C37418DFA69600ADE6E9 /* PeckLoginStoryboardLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckLoginStoryboardLink.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +322,8 @@
 				8631B48C18D0AE7200A21E81 /* PeckTutorialViewController.m */,
 				8610864A18D0AB520059AA7F /* PeckTutorialContentViewController.h */,
 				8610864B18D0AB520059AA7F /* PeckTutorialContentViewController.m */,
+				86F5C37318DFA69600ADE6E9 /* PeckLoginStoryboardLink.h */,
+				86F5C37418DFA69600ADE6E9 /* PeckLoginStoryboardLink.m */,
 			);
 			name = login;
 			sourceTree = "<group>";
@@ -751,6 +756,7 @@
 				86E155C318C7867900A97423 /* PeckApp.xcdatamodeld in Sources */,
 				86E155BC18C7867900A97423 /* main.m in Sources */,
 				86E155ED18C787C300A97423 /* PeckEventsViewController.m in Sources */,
+				86F5C37518DFA69600ADE6E9 /* PeckLoginStoryboardLink.m in Sources */,
 				8633F02218DA6ECF00D16BF5 /* PeckLoadCell.m in Sources */,
 				8631B49018D13C7300A21E81 /* PeckLoadingViewController.m in Sources */,
 				86E155C018C7867900A97423 /* PeckAppDelegate.m in Sources */,
