@@ -10,6 +10,10 @@
 
 @interface PeckRegisterViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *headerLabel;
+@property (weak, nonatomic) IBOutlet UITableView *inputTable;
+@property (weak, nonatomic) IBOutlet UIButton *registerButton;
+
 @end
 
 @implementation PeckRegisterViewController

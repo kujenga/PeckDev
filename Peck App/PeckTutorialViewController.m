@@ -31,7 +31,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.pageTitles = @[@"A Tree", @"Stone Cairn", @"Clouds in the Sky",@"Drops on a Flower"];
-    self.pageImages = @[@"tree", @"stones", @"clouds",@"pink"];
+    self.pageImages = @[@"tree", @"stone", @"clouds",@"pink"];
     
     self.dataSource = self;
     
@@ -43,9 +43,9 @@
     // Change the size of page view controller
     self.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     
-    UIButton *begin = [[UIButton alloc] initWithFrame:CGRectMake(100.0, 300.0, 150.0, 50.0)];
+    UIButton *begin = [[UIButton alloc] initWithFrame:CGRectMake((self.view.frame.size.width/2)-75, 450.0, 150.0, 50.0)];
     [begin setTitle:@"Begin using Peck" forState:UIControlStateNormal];
-    [begin setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [begin setTitleColor:[UIColor colorWithRed:0 green:122.0/255.0 blue:1.0 alpha:1.0] forState:UIControlStateNormal];
     [begin setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
     [begin addTarget:self action:@selector(beginUsingPeck) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:begin];

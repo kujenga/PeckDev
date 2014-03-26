@@ -29,7 +29,7 @@
     UIViewController * screen;
     BOOL isLoggedIn = [[NSUserDefaults standardUserDefaults] boolForKey:@"loginSaved"];
     
-    if (false && isLoggedIn)
+    if (isLoggedIn)
     {
         storyboardobj=[UIStoryboard storyboardWithName:@"LoginStoryboard" bundle:nil];
         screen = [storyboardobj instantiateInitialViewController];

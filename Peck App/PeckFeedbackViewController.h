@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PeckFeedbackViewController : UIViewController
+@interface PeckFeedbackViewController : UIViewController <UITextViewDelegate>
 
 @end
