@@ -11,6 +11,7 @@
 
 @interface PeckSidebarViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+// image underlying the transparent button options
 @property (weak,nonatomic) IBOutlet UIImageView * backgroundImage;
 @property (weak,nonatomic) IBOutlet UITableView * menuTable;
 

@@ -124,6 +124,9 @@
 		86E155FA18C82B4E00A97423 /* Lato-Lig.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86E155F618C82B4E00A97423 /* Lato-Lig.ttf */; };
 		86E155FB18C82B4E00A97423 /* Lato-Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86E155F718C82B4E00A97423 /* Lato-Reg.ttf */; };
 		86EF9CE218EA4CA30037B168 /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 86EF9CE118EA4CA30037B168 /* README.rtf */; };
+		86EF9CE918EA5AD30037B168 /* PeckWebserviceAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF9CE818EA5AD30037B168 /* PeckWebserviceAPIClient.m */; };
+		86EF9CEB18EA5D170037B168 /* SERVICES.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 86EF9CEA18EA5D170037B168 /* SERVICES.rtf */; };
+		86EF9CF018EA73400037B168 /* PeckWebserviceSyncEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EF9CEF18EA73400037B168 /* PeckWebserviceSyncEngine.m */; };
 		86F5C37518DFA69600ADE6E9 /* PeckLoginStoryboardLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F5C37418DFA69600ADE6E9 /* PeckLoginStoryboardLink.m */; };
 /* End PBXBuildFile section */
 
@@ -275,6 +278,12 @@
 		86E155F618C82B4E00A97423 /* Lato-Lig.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Lig.ttf"; sourceTree = "<group>"; };
 		86E155F718C82B4E00A97423 /* Lato-Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Reg.ttf"; sourceTree = "<group>"; };
 		86EF9CE118EA4CA30037B168 /* README.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = README.rtf; path = "Peck App/README.rtf"; sourceTree = "<group>"; };
+		86EF9CE718EA5AD30037B168 /* PeckWebserviceAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckWebserviceAPIClient.h; sourceTree = "<group>"; };
+		86EF9CE818EA5AD30037B168 /* PeckWebserviceAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckWebserviceAPIClient.m; sourceTree = "<group>"; };
+		86EF9CEA18EA5D170037B168 /* SERVICES.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = SERVICES.rtf; path = "Peck App/SERVICES.rtf"; sourceTree = "<group>"; };
+		86EF9CED18EA60A40037B168 /* PeckWebserviceAPIClient_Calls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeckWebserviceAPIClient_Calls.h; sourceTree = "<group>"; };
+		86EF9CEE18EA73400037B168 /* PeckWebserviceSyncEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckWebserviceSyncEngine.h; sourceTree = "<group>"; };
+		86EF9CEF18EA73400037B168 /* PeckWebserviceSyncEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckWebserviceSyncEngine.m; sourceTree = "<group>"; };
 		86F5C37318DFA69600ADE6E9 /* PeckLoginStoryboardLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckLoginStoryboardLink.h; sourceTree = "<group>"; };
 		86F5C37418DFA69600ADE6E9 /* PeckLoginStoryboardLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckLoginStoryboardLink.m; sourceTree = "<group>"; };
 		8B3B78A9BF0E4A57862953C7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -511,6 +520,7 @@
 				86ACA03A18C9744000051FC2 /* PeckFeedbackViewController.m */,
 				86ACA03C18C9744E00051FC2 /* PeckSettingsViewController.h */,
 				86ACA03D18C9744E00051FC2 /* PeckSettingsViewController.m */,
+				86EF9CE318EA58E00037B168 /* WebServices */,
 				8633F02518DA74E300D16BF5 /* Config */,
 				8687DC3818C82EB200DE97CB /* old images */,
 				8632F3AE18C95B3A005ACAA6 /* images */,
@@ -568,8 +578,21 @@
 			isa = PBXGroup;
 			children = (
 				86EF9CE118EA4CA30037B168 /* README.rtf */,
+				86EF9CEA18EA5D170037B168 /* SERVICES.rtf */,
 			);
 			name = Documentation;
+			sourceTree = "<group>";
+		};
+		86EF9CE318EA58E00037B168 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				86EF9CED18EA60A40037B168 /* PeckWebserviceAPIClient_Calls.h */,
+				86EF9CE718EA5AD30037B168 /* PeckWebserviceAPIClient.h */,
+				86EF9CE818EA5AD30037B168 /* PeckWebserviceAPIClient.m */,
+				86EF9CEE18EA73400037B168 /* PeckWebserviceSyncEngine.h */,
+				86EF9CEF18EA73400037B168 /* PeckWebserviceSyncEngine.m */,
+			);
+			name = WebServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -658,6 +681,7 @@
 				8687DC9118C82EB200DE97CB /* chat.png in Resources */,
 				8687DC8218C82EB200DE97CB /* 57_57.png in Resources */,
 				8633F02718DA753A00D16BF5 /* WilliamsConfig.plist in Resources */,
+				86EF9CEB18EA5D170037B168 /* SERVICES.rtf in Resources */,
 				8687DCA018C82EB200DE97CB /* help.png in Resources */,
 				8687DCA618C82EB200DE97CB /* Logo1.png in Resources */,
 				8687DCB518C82EB200DE97CB /* 2.png in Resources */,
@@ -787,7 +811,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86EF9CE918EA5AD30037B168 /* PeckWebserviceAPIClient.m in Sources */,
 				86907BEE18D5583400079FD5 /* PeckEventCell.m in Sources */,
+				86EF9CF018EA73400037B168 /* PeckWebserviceSyncEngine.m in Sources */,
 				86146C3418C9737500C06873 /* PeckNotificationsViewController.m in Sources */,
 				8631D9E018D554F300F86E20 /* PeckLoginViewController.m in Sources */,
 				86E155F018C7B23C00A97423 /* PeckEventInfoViewController.m in Sources */,

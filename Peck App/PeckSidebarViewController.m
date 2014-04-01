@@ -17,18 +17,22 @@
 #import "SWRevealViewController.h"
 
 
-#define SCREEN_HEIGHT 568
+//#define SCREEN_HEIGHT 568
+#define IS_IPHONE5 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)
 
 
 @interface PeckSidebarViewController () {
     
     NSArray * menuItems;
+    NSInteger SCREEN_HEIGHT;
 }
 
 @end
 
 
 @implementation PeckSidebarViewController
+
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -55,6 +59,9 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    SCREEN_HEIGHT = [UIScreen mainScreen].bounds.size.height;
+    
 }
 
 - (void)didReceiveMemoryWarning
