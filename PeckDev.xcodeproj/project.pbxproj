@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F8437B31B484BB9AE514283 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B3B78A9BF0E4A57862953C7 /* libPods.a */; };
 		8610864018D0994B0059AA7F /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8610863F18D0994B0059AA7F /* LoginStoryboard.storyboard */; };
 		8610864C18D0AB520059AA7F /* PeckTutorialContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8610864B18D0AB520059AA7F /* PeckTutorialContentViewController.m */; };
 		86146C3418C9737500C06873 /* PeckNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86146C3318C9737500C06873 /* PeckNotificationsViewController.m */; };
@@ -114,7 +115,6 @@
 		86E155D718C7867900A97423 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86E155D518C7867900A97423 /* InfoPlist.strings */; };
 		86E155D918C7867900A97423 /* PeckAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E155D818C7867900A97423 /* PeckAppTests.m */; };
 		86E155E318C786A400A97423 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86E155E218C786A400A97423 /* MainStoryboard.storyboard */; };
-		86E155E718C786C300A97423 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E155E618C786C300A97423 /* SWRevealViewController.m */; };
 		86E155EA18C786DE00A97423 /* PeckSidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E155E918C786DE00A97423 /* PeckSidebarViewController.m */; };
 		86E155ED18C787C300A97423 /* PeckEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E155EC18C787C300A97423 /* PeckEventsViewController.m */; };
 		86E155F018C7B23C00A97423 /* PeckEventInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E155EF18C7B23C00A97423 /* PeckEventInfoViewController.m */; };
@@ -123,6 +123,7 @@
 		86E155F918C82B4E00A97423 /* Lato-Hai.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86E155F518C82B4E00A97423 /* Lato-Hai.ttf */; };
 		86E155FA18C82B4E00A97423 /* Lato-Lig.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86E155F618C82B4E00A97423 /* Lato-Lig.ttf */; };
 		86E155FB18C82B4E00A97423 /* Lato-Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86E155F718C82B4E00A97423 /* Lato-Reg.ttf */; };
+		86EF9CE218EA4CA30037B168 /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 86EF9CE118EA4CA30037B168 /* README.rtf */; };
 		86F5C37518DFA69600ADE6E9 /* PeckLoginStoryboardLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F5C37418DFA69600ADE6E9 /* PeckLoginStoryboardLink.m */; };
 /* End PBXBuildFile section */
 
@@ -262,8 +263,6 @@
 		86E155D618C7867900A97423 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		86E155D818C7867900A97423 /* PeckAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeckAppTests.m; sourceTree = "<group>"; };
 		86E155E218C786A400A97423 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		86E155E518C786C300A97423 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		86E155E618C786C300A97423 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		86E155E818C786DE00A97423 /* PeckSidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckSidebarViewController.h; sourceTree = "<group>"; };
 		86E155E918C786DE00A97423 /* PeckSidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckSidebarViewController.m; sourceTree = "<group>"; };
 		86E155EB18C787C300A97423 /* PeckEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckEventsViewController.h; sourceTree = "<group>"; };
@@ -275,8 +274,11 @@
 		86E155F518C82B4E00A97423 /* Lato-Hai.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hai.ttf"; sourceTree = "<group>"; };
 		86E155F618C82B4E00A97423 /* Lato-Lig.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Lig.ttf"; sourceTree = "<group>"; };
 		86E155F718C82B4E00A97423 /* Lato-Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Reg.ttf"; sourceTree = "<group>"; };
+		86EF9CE118EA4CA30037B168 /* README.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = README.rtf; path = "Peck App/README.rtf"; sourceTree = "<group>"; };
 		86F5C37318DFA69600ADE6E9 /* PeckLoginStoryboardLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeckLoginStoryboardLink.h; sourceTree = "<group>"; };
 		86F5C37418DFA69600ADE6E9 /* PeckLoginStoryboardLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeckLoginStoryboardLink.m; sourceTree = "<group>"; };
+		8B3B78A9BF0E4A57862953C7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA411B94AAC24356A9B3CAB9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +291,7 @@
 				86E155B418C7867900A97423 /* CoreData.framework in Frameworks */,
 				86E155B218C7867900A97423 /* UIKit.framework in Frameworks */,
 				86E155AE18C7867900A97423 /* Foundation.framework in Frameworks */,
+				2F8437B31B484BB9AE514283 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,12 +453,13 @@
 		86E155A118C7867900A97423 = {
 			isa = PBXGroup;
 			children = (
+				86EF9CDE18EA4C310037B168 /* Documentation */,
 				86E155B518C7867900A97423 /* PeckDev */,
-				86E155E418C786C300A97423 /* SWRevealViewController */,
 				86E155F318C82B4E00A97423 /* Latofont */,
 				86E155D218C7867900A97423 /* PeckDevTests */,
 				86E155AC18C7867900A97423 /* Frameworks */,
 				86E155AB18C7867900A97423 /* Products */,
+				EA411B94AAC24356A9B3CAB9 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -477,6 +481,7 @@
 				86E155B118C7867900A97423 /* UIKit.framework */,
 				86E155B318C7867900A97423 /* CoreData.framework */,
 				86E155CB18C7867900A97423 /* XCTest.framework */,
+				8B3B78A9BF0E4A57862953C7 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -547,16 +552,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		86E155E418C786C300A97423 /* SWRevealViewController */ = {
-			isa = PBXGroup;
-			children = (
-				86E155E518C786C300A97423 /* SWRevealViewController.h */,
-				86E155E618C786C300A97423 /* SWRevealViewController.m */,
-			);
-			name = SWRevealViewController;
-			path = "Peck App/SWRevealViewController";
-			sourceTree = "<group>";
-		};
 		86E155F318C82B4E00A97423 /* Latofont */ = {
 			isa = PBXGroup;
 			children = (
@@ -569,6 +564,14 @@
 			path = "Peck App/Latofont";
 			sourceTree = "<group>";
 		};
+		86EF9CDE18EA4C310037B168 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				86EF9CE118EA4CA30037B168 /* README.rtf */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -576,9 +579,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86E155DC18C7867900A97423 /* Build configuration list for PBXNativeTarget "PeckDev" */;
 			buildPhases = (
+				4674ECCE24054DB4BAED7B8A /* Check Pods Manifest.lock */,
 				86E155A618C7867900A97423 /* Sources */,
 				86E155A718C7867900A97423 /* Frameworks */,
 				86E155A818C7867900A97423 /* Resources */,
+				7B81B547B1524E6CADC8D6EB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -676,6 +681,7 @@
 				8687DCAC18C82EB200DE97CB /* nocomment.png in Resources */,
 				8687DCBA18C82EB200DE97CB /* bg_img.png in Resources */,
 				8687DCBE18C82EB200DE97CB /* share.png in Resources */,
+				86EF9CE218EA4CA30037B168 /* README.rtf in Resources */,
 				8687DCB418C82EB200DE97CB /* 1.png in Resources */,
 				8687DCAF18C82EB200DE97CB /* person.png in Resources */,
 				86E155BA18C7867900A97423 /* InfoPlist.strings in Resources */,
@@ -743,6 +749,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4674ECCE24054DB4BAED7B8A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7B81B547B1524E6CADC8D6EB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		86E155A618C7867900A97423 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -762,7 +801,6 @@
 				86E155C018C7867900A97423 /* PeckAppDelegate.m in Sources */,
 				86BD1B8018C9727400105DE7 /* PeckDiningMenusViewController.m in Sources */,
 				86E155EA18C786DE00A97423 /* PeckSidebarViewController.m in Sources */,
-				86E155E718C786C300A97423 /* SWRevealViewController.m in Sources */,
 				8631D9E318D5550900F86E20 /* PeckRegisterViewController.m in Sources */,
 				86146C3718C973C900C06873 /* PeckCirclesViewController.m in Sources */,
 				86ACA03B18C9744000051FC2 /* PeckFeedbackViewController.m in Sources */,
@@ -884,6 +922,7 @@
 		};
 		86E155DD18C7867900A97423 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA411B94AAC24356A9B3CAB9 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -897,6 +936,7 @@
 		};
 		86E155DE18C7867900A97423 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA411B94AAC24356A9B3CAB9 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
