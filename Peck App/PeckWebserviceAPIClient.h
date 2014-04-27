@@ -9,6 +9,7 @@
 //
 
 #import "AFHTTPSessionManager.h"
+#import "PeckWebserviceAPIClient_Calls.h"
 
 @interface PeckWebserviceAPIClient : AFHTTPSessionManager
 

@@ -459,6 +459,31 @@
 			name = Components;
 			sourceTree = "<group>";
 		};
+		869BD67719083954005BEE7B /* main */ = {
+			isa = PBXGroup;
+			children = (
+				86E155E218C786A400A97423 /* MainStoryboard.storyboard */,
+				86E155F118C7F0E000A97423 /* MainStoryboard-ipad.storyboard */,
+				86E155E818C786DE00A97423 /* PeckSidebarViewController.h */,
+				86E155E918C786DE00A97423 /* PeckSidebarViewController.m */,
+				86E155EB18C787C300A97423 /* PeckEventsViewController.h */,
+				86E155EC18C787C300A97423 /* PeckEventsViewController.m */,
+				86E155EE18C7B23C00A97423 /* PeckEventInfoViewController.h */,
+				86E155EF18C7B23C00A97423 /* PeckEventInfoViewController.m */,
+				86146C3218C9737500C06873 /* PeckNotificationsViewController.h */,
+				86146C3318C9737500C06873 /* PeckNotificationsViewController.m */,
+				86BD1B7E18C9727400105DE7 /* PeckDiningMenusViewController.h */,
+				86BD1B7F18C9727400105DE7 /* PeckDiningMenusViewController.m */,
+				86146C3518C973C900C06873 /* PeckCirclesViewController.h */,
+				86146C3618C973C900C06873 /* PeckCirclesViewController.m */,
+				86ACA03918C9744000051FC2 /* PeckFeedbackViewController.h */,
+				86ACA03A18C9744000051FC2 /* PeckFeedbackViewController.m */,
+				86ACA03C18C9744E00051FC2 /* PeckSettingsViewController.h */,
+				86ACA03D18C9744E00051FC2 /* PeckSettingsViewController.m */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
 		86E155A118C7867900A97423 = {
 			isa = PBXGroup;
 			children = (
@@ -501,26 +526,9 @@
 				86E155BE18C7867900A97423 /* PeckAppDelegate.h */,
 				86E155BF18C7867900A97423 /* PeckAppDelegate.m */,
 				8610864D18D0AB610059AA7F /* login */,
-				86E155E218C786A400A97423 /* MainStoryboard.storyboard */,
-				86E155F118C7F0E000A97423 /* MainStoryboard-ipad.storyboard */,
-				86E155E818C786DE00A97423 /* PeckSidebarViewController.h */,
-				86E155E918C786DE00A97423 /* PeckSidebarViewController.m */,
-				86E155EB18C787C300A97423 /* PeckEventsViewController.h */,
-				86E155EC18C787C300A97423 /* PeckEventsViewController.m */,
-				86E155EE18C7B23C00A97423 /* PeckEventInfoViewController.h */,
-				86E155EF18C7B23C00A97423 /* PeckEventInfoViewController.m */,
+				869BD67719083954005BEE7B /* main */,
 				86907BEB18D557F800079FD5 /* Components */,
-				86146C3218C9737500C06873 /* PeckNotificationsViewController.h */,
-				86146C3318C9737500C06873 /* PeckNotificationsViewController.m */,
-				86BD1B7E18C9727400105DE7 /* PeckDiningMenusViewController.h */,
-				86BD1B7F18C9727400105DE7 /* PeckDiningMenusViewController.m */,
-				86146C3518C973C900C06873 /* PeckCirclesViewController.h */,
-				86146C3618C973C900C06873 /* PeckCirclesViewController.m */,
-				86ACA03918C9744000051FC2 /* PeckFeedbackViewController.h */,
-				86ACA03A18C9744000051FC2 /* PeckFeedbackViewController.m */,
-				86ACA03C18C9744E00051FC2 /* PeckSettingsViewController.h */,
-				86ACA03D18C9744E00051FC2 /* PeckSettingsViewController.m */,
-				86EF9CE318EA58E00037B168 /* WebServices */,
+				86EF9CE318EA58E00037B168 /* Webservice */,
 				8633F02518DA74E300D16BF5 /* Config */,
 				8687DC3818C82EB200DE97CB /* old images */,
 				8632F3AE18C95B3A005ACAA6 /* images */,
@@ -583,7 +591,7 @@
 			name = Documentation;
 			sourceTree = "<group>";
 		};
-		86EF9CE318EA58E00037B168 /* WebServices */ = {
+		86EF9CE318EA58E00037B168 /* Webservice */ = {
 			isa = PBXGroup;
 			children = (
 				86EF9CED18EA60A40037B168 /* PeckWebserviceAPIClient_Calls.h */,
@@ -592,7 +600,7 @@
 				86EF9CEE18EA73400037B168 /* PeckWebserviceSyncEngine.h */,
 				86EF9CEF18EA73400037B168 /* PeckWebserviceSyncEngine.m */,
 			);
-			name = WebServices;
+			name = Webservice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

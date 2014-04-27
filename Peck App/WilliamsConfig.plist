@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>FullName</key>
+	<string>Williams College</string>
+	<key>ShortName</key>
+	<string>Williams</string>
+	<key>Mascot</key>
+	<string>Ephs</string>
+	<key>IDNumber</key>
+	<integer>0</integer>
+	<key>LogoURL</key>
+	<string>http://www.webservice.peckapp.com/resources/cow.jpg</string>
+	<key>PrimaryColor</key>
+	<dict>
+		<key>r</key>
+		<integer>0</integer>
+		<key>g</key>
+		<integer>0</integer>
+		<key>b</key>
+		<integer>0</integer>
+	</dict>
+	<key>SecondaryColor</key>
+	<dict>
+		<key>r</key>
+		<integer>0</integer>
+		<key>g</key>
+		<integer>0</integer>
+		<key>b</key>
+		<integer>0</integer>
+	</dict>
+	<key>TertiaryColor</key>
+	<dict>
+		<key>r</key>
+		<integer>0</integer>
+		<key>g</key>
+		<integer>0</integer>
+		<key>b</key>
+		<integer>0</integer>
+	</dict>
+</dict>
 </plist>
